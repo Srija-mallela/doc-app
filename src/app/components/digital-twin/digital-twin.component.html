@@ -1,0 +1,16 @@
+<section>
+  <div class="ml-10">
+    <!-- Add a click event to toggle the dropdown -->
+    <h1 (click)="toggleDropdown()" class="cursor-pointer">Digital Twin</h1>
+  </div>
+  <!-- Conditionally display the image based on the isDropdownOpen property -->
+  <div [ngClass]="{'hidden': !isDropdownOpen}" class="ml-10">
+    <img
+      class="mt-2"
+      style="width: 100px;"
+      src="assets/human.png"
+      alt="Human Digital Twin Illustration"
+    />
+  </div>
+</section>
+
